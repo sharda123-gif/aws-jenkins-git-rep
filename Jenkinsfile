@@ -23,7 +23,7 @@ pipeline {
                        sh 'aws s3 ls'
                         //sh 'aws iam list-users'
 
-                        sh 'aws ec2 describe-instances'
+                        //sh 'aws ec2 describe-instances'
                     }
                 }
             }
