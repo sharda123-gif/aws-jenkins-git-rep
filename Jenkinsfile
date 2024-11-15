@@ -5,6 +5,10 @@ pipeline {
         AWS_REGION = 'us-east-1'  // Specify the AWS region
     }
 
+    triggers {
+    pollSCM('* * * * *') // for polling every minute
+}
+
     stages {
         stage('List S3 Buckets') {
             steps {
