@@ -20,8 +20,8 @@ pipeline {
       secretKeyVariable: 'AWS_SECRET_ACCESS_KEY']]) 
 
  {
-                       sh 'aws s3 ls'
-                        sh 'aws iam list-users'
+                       //sh 'aws s3 ls'
+                        //sh 'aws iam list-users'
 
                         sh 'aws ec2 describe-instances'
                     }
