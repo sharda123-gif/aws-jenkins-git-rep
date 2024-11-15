@@ -6,7 +6,7 @@ pipeline {
     }
 
     triggers {
-    pollSCM('* * * * *') // for polling every minute
+    pollSCM('* * * * *') 
 }
 
     stages {
@@ -22,6 +22,7 @@ pipeline {
  {
                         sh 'aws s3 ls'
                         sh 'aws iam list-users'
+                        sh 'aws ec2 describe-instances'
                     }
                 }
             }
